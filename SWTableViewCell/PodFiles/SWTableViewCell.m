@@ -68,6 +68,8 @@ static NSString * const kTableViewCellContentView = @"UITableViewCellContentView
     
     if (self)
     {
+        // to fix iOS14 beta4 bug
+        self.contentView;
         [self initializer];
     }
     
